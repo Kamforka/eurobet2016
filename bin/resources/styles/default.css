@@ -1,0 +1,534 @@
+
+/****************************/
+/*	 Default Widget styles	*/
+/****************************/
+
+QMainWindow * QPushButton#BackButton {
+	background-color: transparent;
+	border: none;
+	border-radius: 25px;
+	color: white;
+	font-size: 36px;
+	width: 200px;
+}
+
+QMainWindow * QPushButton#BackButton:hover {
+	background-color: qlineargradient(x1: 0, y1: 0.5, x2: 1, y2: 1,
+										stop:0.5 transparent, stop:1 white);
+}
+
+QMainWindow * QPushButton#BackButton:pressed {
+	background-color: qlineargradient(x1: 0, y1: 0.5, x2: 1, y2: 1,
+										stop:0 white, stop:1 transparent);
+	color: gold;
+}
+
+
+QMainWindow {
+	background-color: transparent;
+	background-image: url(resources/images/bg.png);
+}
+
+
+
+QToolBar {
+	border-bottom-width: 3px;
+	border-bottom-color: rgba(255, 255, 255, 25%);
+	border-bottom-style: solid;
+}
+QToolTip  {
+	border: 2px solid rgba(255, 255, 255, 75%);
+	border-radius: 2px;
+	background-color: rgba(50, 185, 230, 50%);
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+QStatusBar{
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+QStackedWidget * {
+	font-weight: bold;
+}
+
+QPushButton {
+
+	border:1px solid white;
+	border-radius: 1px;
+	background-color: transparent;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	icon-size: 36px;
+	height: 50px;
+	width: 100px;
+	outline: 0;
+}
+
+QPushButton:hover {
+	border: 1px solid rgba(255,255,255,25%);
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+                                      stop: 0 transparent, stop: 1 white);
+	color: gold;
+}
+
+QPushButton:pressed {
+	border: 1px solid rgba(255,255,255,25%);
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+                                      stop: 0 white, stop: 1 transparent);
+}
+
+
+
+QDialog {
+	background-color: transparent;
+	background-image: url(resources/images/bg.png);
+}
+
+QDialog QLabel{
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+QDialog QLineEdit {
+	background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+					stop:0 transparent, stop:0.9 silver);
+	border-width: 1px;
+	border-style: solid;
+	border-color: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 transparent, stop: 0.4 white, stop:1 silver);
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+QDialog QLineEdit:focus {
+	background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+					stop:0 navy, stop:0.75 transparent);
+	border-color: white;
+}
+
+QDialog  QPushButton {
+	background-color: transparent;
+	border: 1px solid rgba(255,255,255,25%);
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	width: 150px;
+}
+
+QDialog QPushButton:hover {
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+										stop:0.5 transparent, stop:1 silver);
+}
+
+QDialog QPushButton:pressed {
+
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+										stop:0 white, stop:0.5 transparent);
+	color: gold;
+}
+
+
+/****************************/
+/*	 About Dialog styles	*/
+/****************************/
+AboutDialog {
+	background-color: transparent;
+	background-image: url(resources/images/bg.png);
+}
+
+AboutDialog QLabel  {
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+AboutDialog QLineEdit {
+	background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+					stop:0 transparent, stop:0.9 silver);
+	border-width: 1px;
+	border-style: solid;
+	border-color: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 transparent, stop: 0.4 white, stop:1 silver);
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 36px;
+}
+
+AboutDialog QLineEdit:focus {
+	background-color: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+					stop:0 navy, stop:0.75 transparent);
+	border-color: white;
+	box-shadow: 2px;
+}
+
+AboutDialog  QPushButton {
+	background-color: transparent;
+	border: transparent;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	width: 150px;
+}
+
+AboutDialog QPushButton:hover {
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+										stop:0.5 transparent, stop:1 silver);
+}
+
+AboutDialog QPushButton:pressed {
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+										stop:0 white, stop:0.5 transparent);
+	color: gold;
+}
+
+
+/*************************************/
+/*	 Change Password Dialog styles	 */
+/*************************************/
+
+ChangePasswordDialog  QLabel#PasswordResponse{
+	color: #ffa260;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+/****************************/
+/*	 Login Dialog styles	*/
+/****************************/
+LoginDialog QLabel#LogonResponse{
+	color: #ffa260;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+LoginDialog QPushButton#ForgotPassword {
+	border: none;
+	font-size: 12px;
+}
+
+/****************************/
+/*	   Main Menu styles		*/
+/****************************/
+MainMenu QPushButton {
+	border:none;
+	border-radius: 25px;
+	background-color: transparent;
+	color: white;
+	font-size: 36px;
+	font-weight: bold;
+	icon-size: 36px;
+	height: 50px;
+	width: 50px;
+}
+
+MainMenu QPushButton:pressed {
+	border-width: 0.5px;
+	border-style: solid;
+	border-color: transparent rgba(255,255,255,25%) rgba(255,255,255,25%) transparent;
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+                                      stop: 0 white, stop: 1 transparent);
+	
+}
+
+/****************************/
+/*	   Bet Screen styles	*/
+/****************************/
+
+BetScreen QLabel {
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 36px;
+}
+
+BetScreen  QPushButton {
+	border-color: rgba(255, 255, 255, 25%);
+	border-radius: 5px;
+	border-width: 2px;
+	width: 50px;
+}
+
+
+/****************************/
+/*	   Match Screen styles	*/
+/****************************/
+
+MatchScreen QLabel {
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 36px;
+}
+
+MatchScreen QMessageBox QLabel{
+	font-size: 18px;
+}
+
+MatchScreen QMessageBox QPushButton{
+	font-size: 18px;
+	height: 50px;
+	width: 50px;
+}
+
+MatchScreen  QPushButton#BackButton {
+	background-color: transparent;
+	border: none;
+	border-radius: 25px;
+	color: white;
+	font-size: 36px;
+	width: 200px;
+}
+
+MatchScreen QPushButton#BackButton:hover {
+	background-color: qlineargradient(x1: 0, y1: 0.5, x2: 1, y2: 1,
+										stop:0.5 transparent, stop:1 white);
+}
+
+MatchScreen QPushButton#BackButton:pressed {
+	background-color: qlineargradient(x1: 0, y1: 0.5, x2: 1, y2: 1,
+										stop:0 white, stop:1 transparent);
+	color: gold;
+}
+
+MatchScreen  QPushButton#SubmitButton {
+	background-color: transparent;
+	border: none;
+	border-radius: 25px;
+	color: white;
+	font-size: 36px;
+	width: 200px;
+}
+
+MatchScreen QPushButton#SubmitButton:hover {
+	background-color: qlineargradient(x1: 0, y1: 0.5, x2: 1, y2: 1,
+										stop:0.5 transparent, stop:1 white);
+}
+
+MatchScreen QPushButton#SubmitButton:pressed {
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5,
+										stop:0 white, stop:1 transparent);
+	color: gold;
+}
+
+/****************************/
+/*	 Bet Entry styles	*/
+/****************************/
+
+BetEntry QPushButton{
+	font-size: 36px;
+}
+
+BetEntry QPushButton#HomeTeam{
+	border : none;
+	color : white;
+	text-align: left;
+}
+
+BetEntry QPushButton#VisitorTeam{
+	border : none;
+	color : white;
+	text-align: right;
+}
+
+
+
+BetEntry QPushButton:hover {
+	background-color: none;
+}
+
+BetEntry QPushButton:pressed {
+	border: 1px solid white;
+}
+
+BetEntry QLineEdit {
+	background-color: transparent;
+	border: 1px solid white;
+	border-radius: 2px;
+	color: white;
+	font-size: 36px;
+	text-align: center;
+}
+
+BetEntry QLabel {
+	background-color: transparent;
+	border: none;
+	font-style: normal;
+	color: white;
+	font-size: 36px;
+}
+
+/****************************/
+/*	 Betting Dialog styles		*/
+/****************************/
+
+BettingDialog QLabel#OkLabel {
+	color: #0EE85E;
+}
+BettingDialog QLabel#NokLabel {
+	color: #F27979;
+}
+
+/****************************/
+/*	 Group Grid styles		*/
+/****************************/
+
+GroupGrid QLabel {
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+GroupGrid QTableView::item {
+	border-top: 1px solid white;
+}
+
+GroupGrid QTableWidget {
+	background-color: transparent;
+	border: none;
+	color: white;
+	font-size: 12px;
+	gridline-color: rgba(255,255,255,10%);
+	selection-background-color: transparent;
+	outline: none;
+}
+
+GroupGrid QTableWidget QHeaderView {
+	color: white;
+	background-color: transparent;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+GroupGrid QTableWidget QHeaderView::section {
+	color: white;
+	background-color: transparent;
+	border-left: 1px solid white;
+}
+
+
+GroupGrid QTableWidget QTableCornerButton::section {
+	background: transparent;
+	border: none;
+}
+
+/****************************/
+/*	 Result Entry styles		*/
+/****************************/
+
+ResultEntry {
+	border: 2px solid white;
+}
+
+ResultEntry QLabel {
+	color:white;
+	font-size: 16px;
+}
+
+ResultEntry QPushButton {
+	background-color: transparent;
+	border: none;
+	font-size:16px;
+	icon-size: 20px;
+}
+
+ResultEntry QPushButton:hover {
+	background-color: transparent;
+	border:none;
+}
+
+ResultEntry QPushButton:pressed{
+	background-color: transparent;
+	border:none;
+}
+
+/****************************/
+/*	 Result Pager styles		*/
+/****************************/
+
+ResultPager QPushButton#PagerButton {
+	border: 1px solid white;
+	border-radius: 5px;
+	color: white;
+	font-size: 12px;
+	height: 20px;
+	width: 20px;
+}
+
+ResultPager QPushButton#PagerButton:checked{
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 1,
+                                      stop: 0 white, stop: 1 transparent);
+}
+
+
+/****************************/
+/*	 Score Entry styles		*/
+/****************************/
+
+ScoreEntry QLabel {
+	color:white;
+	font-size: 16px;
+}
+
+
+/****************************/
+/*	 Score Pager styles		*/
+/****************************/
+
+ScorePager QLabel#Header{
+	color: gold;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+ScorePager QPushButton#PagerButton {
+	border: 1px solid white;
+	border-radius: 5px;
+	color: white;
+	font-size: 12px;
+	height: 20px;
+	width: 20px;
+}
+
+ScorePager QPushButton#PagerButton:checked{
+	background-color: qlineargradient(x1: 1, y1: 0, x2: 1, y2: 1,
+                                      stop: 0.25 transparent, stop: 1 gold);
+}
+
+
+
+/****************************/
+/*	 EUROBet Updater styles	*/
+/****************************/
+EUROBetUpdater * QLabel {
+	color: white;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+EUROBetUpdater * QProgressBar {
+	border: 2px solid white;
+	border-radius: 5px;
+	color: rgba(0, 201, 0, 100%);
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+
+	
+
+}
+
+EUROBetUpdater * QProgressBar::chunk {
+	background-color: rgba(66, 143, 199, 100%);
+	margin: 1px;
+}
